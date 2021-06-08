@@ -10,8 +10,8 @@ while (option > 0) and (option < 4):
     elif option==3:
         result = view()
         for line in result:
-            #print(line[2:-1])                  show the string a partir da position [2], like "12Test" will showing "Teste"
-            #print(line[line.find(";")+1:-1])   #desta forma não esta engessado, encontrara a posição do primeiro ";" e exibira a partir dele
+            #print(line[2:-1])                  show the string from that position [2], like "12Test" will show "Test"
+            #print(line[line.find(";")+1:-1])   #this way it doesn't get frozen, it will look for the position of the first ";" and will show from that
             vlist = line.split(";")
             print("Date.........: ", vlist[1])
             print("Description..: ", vlist[2])
